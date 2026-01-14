@@ -81,22 +81,32 @@
 
       <span class="ai-tag">OCBC INTELLIGENT NAVIGATOR</span>
 
-      <h2>Simply Spot On<br><span class="ai-highlight">AI Support.</span></h2>
+      <h2>
+        Simply Spot On<br>
+        <span class="ai-highlight">AI Support.</span>
+      </h2>
+
       <p>Instant guides for app functions, bank history, or dedicated consultation.</p>
 
-      <div class="ai-search">
-        <input type="text" placeholder="Ask for a guide, service, or history" />
-        <button class="btn ai">ASK AI</button>
-      </div>
+      <!-- Chat Container -->
+      <div class="chat-frame">
 
-      <div class="ai-suggestions">
-        <button>OCBC 360 Bonus</button>
-        <button>How to reset PIN?</button>
-        <button>Our History</button>
+        <!-- Messages -->
+        <div id="chat-messages"></div>
+
+        <!-- Input -->
+        <div class="chat-input">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Ask a follow-up question..."
+          />
+          <button id="send-btn">SEND</button>
+        </div>
+
       </div>
 
     </section>
-
   </main>
 
   <!-- ================= FOOTER ================= -->
@@ -149,6 +159,6 @@
     </div>
 
   </footer>
-
+  <script src="index.js"></script>
 </body>
 </html>
